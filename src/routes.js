@@ -15,11 +15,21 @@
 //
 // Category: workflow
 
+// Express 4 keeps routes on app._router; Express 5 (Hubot 11+) moved them to
+// app.router. Reading app.router on Express 4 throws, so check _router first.
+function routerFor(app) {
+  if (app._router) {
+    return app;
+  }
+  return app.router || app;
+}
+
 module.exports = function (robot) {
   const expressListEndpoints = require('express-list-endpoints');
-  const endpoints = expressListEndpoints(robot.router);
 
   robot.respond(/\s*http routes\s*$/i, function (msg) {
+    // List at request time so routes registered by scripts loaded later show up too.
+    const endpoints = expressListEndpoints(routerFor(robot.router));
 
     // sort routes
     const sortedEndpoints = endpoints.sort((a, b) => {
@@ -32,7 +42,7 @@ module.exports = function (robot) {
       return `${endpoint.methods.join(', ').padEnd(10)} ${endpoint.path}`;
     });
 
-    if(msg.robot.adapterName == "slack") {
+    if(/slack/i.test(msg.robot.adapterName || '')) {
       msg.send("```" + "\n" + formattedRoutes.join('\n') + "```");
     } else {
       msg.send(formattedRoutes.join('\n'));
