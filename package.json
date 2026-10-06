@@ -1,6 +1,6 @@
 {
   "name": "hubot-http-routes",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Display all the http routes that hubot has registered",
   "main": "index.js",
   "homepage": "https://github.com/stahnma/hubot-http-routes",
@@ -25,10 +25,10 @@
     "url": "https://github.com/stahnma/hubot-http-routes"
   },
   "peerDependencies": {
-    "hubot": "^3"
+    "hubot": ">=3"
   },
  "dependencies": {
-       "express-list-endpoints": "^6.0.0"
+       "express-list-endpoints": "^7.1.1"
   },
   "devDependencies": {
     "chai": "^4.3.6",
