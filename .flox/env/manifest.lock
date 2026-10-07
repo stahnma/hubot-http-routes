@@ -1,1 +1,303 @@
-{"lockfile-version":0,"manifest":{"install":{"ack":null,"gnumake":null,"nodejs":null},"registry":{"defaults":{"subtrees":null},"inputs":{"nixpkgs":{"from":{"owner":"NixOS","ref":"release-23.05","repo":"nixpkgs","type":"github"},"subtrees":["legacyPackages"]}},"priority":["nixpkgs"]}},"packages":{"aarch64-darwin":{"ack":{"attr-path":["legacyPackages","aarch64-darwin","ack"],"info":{"broken":false,"license":null,"pname":"ack","unfree":false,"version":"3.7.0"},"input":{"attrs":{"lastModified":1701805708,"narHash":"sha256-hh0S14E816Img0tPaNQSEKFvSscSIrvu1ypubtfh6M4=","owner":"NixOS","repo":"nixpkgs","rev":"0561103cedb11e7554cf34cea81e5f5d578a4753","type":"github"},"fingerprint":"aa98e52708be56a8b7577908fec1bcdfa31c32de8f5adb31604eaf5c5d6f7df6","url":"github:NixOS/nixpkgs/0561103cedb11e7554cf34cea81e5f5d578a4753"},"priority":5},"gnumake":{"attr-path":["legacyPackages","aarch64-darwin","gnumake"],"info":{"broken":false,"license":"GPL-3.0-or-later","pname":"gnumake","unfree":false,"version":"4.4.1"},"input":{"attrs":{"lastModified":1701805708,"narHash":"sha256-hh0S14E816Img0tPaNQSEKFvSscSIrvu1ypubtfh6M4=","owner":"NixOS","repo":"nixpkgs","rev":"0561103cedb11e7554cf34cea81e5f5d578a4753","type":"github"},"fingerprint":"aa98e52708be56a8b7577908fec1bcdfa31c32de8f5adb31604eaf5c5d6f7df6","url":"github:NixOS/nixpkgs/0561103cedb11e7554cf34cea81e5f5d578a4753"},"priority":5},"nodejs":{"attr-path":["legacyPackages","aarch64-darwin","nodejs"],"info":{"broken":false,"license":"MIT","pname":"nodejs","unfree":false,"version":"18.17.1"},"input":{"attrs":{"lastModified":1701805708,"narHash":"sha256-hh0S14E816Img0tPaNQSEKFvSscSIrvu1ypubtfh6M4=","owner":"NixOS","repo":"nixpkgs","rev":"0561103cedb11e7554cf34cea81e5f5d578a4753","type":"github"},"fingerprint":"aa98e52708be56a8b7577908fec1bcdfa31c32de8f5adb31604eaf5c5d6f7df6","url":"github:NixOS/nixpkgs/0561103cedb11e7554cf34cea81e5f5d578a4753"},"priority":5}}},"registry":{"defaults":{"subtrees":null},"inputs":{"nixpkgs":{"from":{"lastModified":1701805708,"narHash":"sha256-hh0S14E816Img0tPaNQSEKFvSscSIrvu1ypubtfh6M4=","owner":"NixOS","repo":"nixpkgs","rev":"0561103cedb11e7554cf34cea81e5f5d578a4753","type":"github"},"subtrees":["legacyPackages"]}},"priority":["nixpkgs"]}}
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "schema-version": "1.17.0",
+    "install": {
+      "ack": {
+        "pkg-path": "ack"
+      },
+      "gnumake": {
+        "pkg-path": "gnumake"
+      },
+      "nodejs": {
+        "pkg-path": "nodejs"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {}
+  },
+  "packages": [
+    {
+      "attr_path": "ack",
+      "broken": false,
+      "derivation": "/nix/store/l51xzflzkddp5a7isy83qcl99151fjs0-perl5.42.3-ack-3.10.0.drv",
+      "description": "Grep-like tool tailored to working with large trees of source code",
+      "install_id": "ack",
+      "license": "Artistic-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "perl5.42.3-ack-3.10.0",
+      "pname": "ack",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T05:00:37.158574Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.10.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/k03ih5bs2ilw8cnqivwgnp03a10c039p-perl5.42.3-ack-3.10.0-man",
+        "out": "/nix/store/w55202n9yr85p9bz4qp4fki27w8d00zb-perl5.42.3-ack-3.10.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ack",
+      "broken": false,
+      "derivation": "/nix/store/fvhdxs2jmffdz90kz19d262p6gigwls2-perl5.42.3-ack-3.10.0.drv",
+      "description": "Grep-like tool tailored to working with large trees of source code",
+      "install_id": "ack",
+      "license": "Artistic-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "perl5.42.3-ack-3.10.0",
+      "pname": "ack",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T05:33:53.152285Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.10.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/bwb7r6jz8li7wb48jfdjalv2h4m4bnjc-perl5.42.3-ack-3.10.0-man",
+        "out": "/nix/store/7qfy3gha3bgvp1g7hw9vj63454fa32kq-perl5.42.3-ack-3.10.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ack",
+      "broken": false,
+      "derivation": "/nix/store/zky5fnhqyfj9g5vn0pw9fnh7gsc3mard-perl5.42.3-ack-3.10.0.drv",
+      "description": "Grep-like tool tailored to working with large trees of source code",
+      "install_id": "ack",
+      "license": "Artistic-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "perl5.42.3-ack-3.10.0",
+      "pname": "ack",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T06:11:13.818379Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.10.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/5ssjrf38py4a0zjx2yfabafrl6aviy8s-perl5.42.3-ack-3.10.0-man",
+        "out": "/nix/store/96ya6pn420q6zycqfnajmsw2a1rf1l7g-perl5.42.3-ack-3.10.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/ixyfvrasnlka4z1l82nyxy27bx7qghfb-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T05:00:38.863606Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/6xc12mfjdpps4gryzw1vba0kinx7mg5r-gnumake-4.4.1-doc",
+        "info": "/nix/store/vri43a3jysfvlr7yyhw1qa6rvzzsc3hw-gnumake-4.4.1-info",
+        "man": "/nix/store/3h4fr0vcwhn62lppmwz2kr4z1qrl5g10-gnumake-4.4.1-man",
+        "out": "/nix/store/8l4wgxmhdxfvc9g18y76bnxl1ghgcp7n-gnumake-4.4.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/fnvp7xjnf8qh2xx39pfdhxcf45x3br53-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T05:33:56.193772Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/h3d6nz3ihl1jarlhppmckfqx048d6mri-gnumake-4.4.1-debug",
+        "doc": "/nix/store/5d1cpj29hkw3pky3cs89gbkgpsgb4mz5-gnumake-4.4.1-doc",
+        "info": "/nix/store/h2xl525mjqr9wyqfb51z85hglhy07hsg-gnumake-4.4.1-info",
+        "man": "/nix/store/4yqlxwxva5hvnknzx4iiilmgjy2qy35q-gnumake-4.4.1-man",
+        "out": "/nix/store/q07jxvck60qgrg4p1ywypddh5zz6i9s2-gnumake-4.4.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/k35b6rl4b3rlbydvmqwkk2958bpz8g6y-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T06:11:17.031260Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/y063fsa1m3f09v1j7vkzf9vciknp64jf-gnumake-4.4.1-debug",
+        "doc": "/nix/store/2hv3gf67ig7r1rz910l0chxkm8y5jx31-gnumake-4.4.1-doc",
+        "info": "/nix/store/c2hmvqb78656k2w3lq7vzvpmkj2ysbda-gnumake-4.4.1-info",
+        "man": "/nix/store/pfqv0fpdf48lj1x0a4ws49kjx6wbqa8q-gnumake-4.4.1-man",
+        "out": "/nix/store/z565rgmn9vccv2h0g87z725pw610jmm8-gnumake-4.4.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/kfalw8dhzga1b294cr5zz1diwgkigrra-nodejs-24.21.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "nodejs-24.21.0",
+      "pname": "nodejs",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T05:01:03.282790Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "24.21.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7cr3l1m9yyng2hscs8lj4x4bj0hm7908-nodejs-24.21.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/ij09sr7m9ngn7iafal95327svx411rjf-nodejs-24.21.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "nodejs-24.21.0",
+      "pname": "nodejs",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T05:34:32.725534Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "24.21.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8lgcgi9riqm71v9ibjw5qjcwwr5nfm83-nodejs-24.21.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/m4gixiwcnhplm2mcd5nnd6i0lxncnyji-nodejs-24.21.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "nodejs-24.21.0",
+      "pname": "nodejs",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T06:11:56.213900Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "24.21.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gxq2cd70i077rah1d4hkzc1lpq8q4pv8-nodejs-24.21.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
