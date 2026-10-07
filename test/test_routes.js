@@ -1,28 +1,25 @@
 const { expect } = require('chai');
-const Helper = require('hubot-test-helper');
-// Note to self, order of import here really matters
-const helper = new Helper(['../fixtures/register_routes.js', '../src/routes.js' ]);
+const { createRobot } = require('./support/robot');
+
+const scripts = ['fixtures/register_routes.js', 'src/routes.js'];
 
 describe('http routes', () => {
   let room;
 
-  beforeEach(() => {
-    room = helper.createRoom();
+  beforeEach(async () => {
+    room = await createRobot(scripts);
   });
 
   afterEach(() => {
     room.destroy();
   });
 
-  it('responds with http routes', () => {
-    return room.user.say('alice', 'hubot http routes')
-      .then(() => {
-        expect(room.messages).to.eql([
-          ['alice', 'hubot http routes'],
-          ['hubot', 'GET, POST  /params/:item\nGET        /route'],
-        ]);
-      });
+  it('responds with http routes', async () => {
+    await room.say('hubot http routes');
+    expect(room.messages).to.eql([
+      ['alice', 'hubot http routes'],
+      ['hubot', 'GET, POST  /params/:item\nGET        /route'],
+    ]);
   });
 
 });
-
